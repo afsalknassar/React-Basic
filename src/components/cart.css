@@ -1,0 +1,223 @@
+/* Overlay Styles */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1040;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 400px;
+  background: #fff;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  z-index: 1041;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Cart Container Styles */
+.cart-container {
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f7fb;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Products Section Styles */
+.products {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  max-height: calc(100vh - 160px);
+}
+
+.product {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+
+.card1-img {
+  width: 80px;
+  height: 80px;
+  background-color: #ddd;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+/* Product Title and Description Styles */
+.product-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* Price Label */
+.price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #e87c5e;
+}
+
+/* Empty Cart Styles */
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  color: #777;
+}
+
+.empty-cart-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.empty-cart-message {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Checkout Section Styles */
+.checkout-section {
+  background: #fff;
+  border-top: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.checkout-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.checkout-btn {
+  padding: 12px 20px;
+  background: #f09d51;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.checkout-btn:hover {
+  background: #e88b42;
+}
+/* CSS */
+.delete-btn {
+  border: none;
+  background: transparent;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-btn:hover {
+  background-color: rgba(255, 75, 75, 0.1);
+}
+
+.delete-btn:active {
+  transform: scale(0.95);
+}
+
+.delete-icon {
+  transition: all 0.2s ease;
+}
+
+.delete-icon path {
+  fill: #FF4B4B;
+  transition: fill 0.2s ease;
+}
+
+.delete-btn:hover .delete-icon path {
+  fill: #FF3333;
+}
+
+/* Alternative outlined version */
+.delete-btn--outlined {
+  border: 2px solid #FF4B4B;
+  padding: 6px;
+}
+
+.delete-btn--outlined .delete-icon path {
+  fill: none;
+  stroke: #FF4B4B;
+  stroke-width: 1.5;
+}
+
+.delete-btn--outlined:hover {
+  background-color: #FF4B4B;
+}
+
+.delete-btn--outlined:hover .delete-icon path {
+  stroke: white;
+}
+
+.disable {
+  pointer-events: none;
+  opacity: 0.5;
+  color: #392b2b;
+}
