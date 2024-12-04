@@ -154,7 +154,7 @@ export default function Home() {
         // Add more data as needed
     ];
 
-    const itemsPerPage = 1
+    const itemsPerPage = 4
     const [currentPage, setCurrentPage] = useState(1);
     const totalPages = Math.ceil(products.length / itemsPerPage);
 
